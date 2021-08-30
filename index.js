@@ -14,16 +14,21 @@ function scuberGreetingForFeet(someValue){
 }
 
 function ternaryCheckCity(city){
-  if (city = 'New York') {
-    return 'Ok, sounds good.'
+     let destination = city === ('NYC') ? "Ok, sounds good." : "No go." ;
+  return destination;
   }
 
-  else {
-    return 'No go.'  }
 
-  
-}
 
-function switchOnCharmFromTip(){
-  // Write your code here!
+function switchOnCharmFromTip(tip){
+  switch(tip){
+    case 'generous':
+      return 'Thank you so much.';
+    case 'not as generous':
+      return 'Thank you.';
+    default:
+      return 'Bye.'
+
+  }
+
 }
